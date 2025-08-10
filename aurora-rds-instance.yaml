@@ -6,7 +6,6 @@ Resources:
       ApplyImmediately: true
       CertificateRotationRestart: false
       CopyTagsToSnapshot: false
-      DBInstanceClass: db.x2g
       DBInstanceIdentifier: monthly-expenses
       Engine: aurora-postgresql
       ManageMasterUserPassword: false
