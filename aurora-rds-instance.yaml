@@ -1,14 +1,20 @@
 Resources:
-  DBInstance:  # ? Fixed level
+  AuroraCluster:
+    Type: AWS::RDS::DBCluster
+    Properties:
+      Engine: aurora-postgresql
+      EngineVersion: "15.3"
+      DatabaseName: mydb
+      MasterUsername: admin
+      MasterUserPassword: MySecurePassword123!
+      ServerlessV2ScalingConfiguration:
+        MinCapacity: 0.5
+        MaxCapacity: 4
+      PubliclyAccessible: true
+
+  AuroraInstance:
     Type: AWS::RDS::DBInstance
     Properties:
-      AllowMajorVersionUpgrade: true
-      ApplyImmediately: true
-      CertificateRotationRestart: false
-      CopyTagsToSnapshot: false
-      DBInstanceClass: db.serverless	
+      DBClusterIdentifier: !Ref AuroraCluster
+      DBInstanceClass: db.serverless
       Engine: aurora-postgresql
-      ManageMasterUserPassword: false
-      MaxAllocatedStorage: 100
-      NetworkType: IPV4
-      PubliclyAccessible: true
