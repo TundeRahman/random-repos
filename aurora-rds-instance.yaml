@@ -10,7 +10,7 @@ Resources:
       ServerlessV2ScalingConfiguration:
         MinCapacity: 0.5
         MaxCapacity: 4
-      PubliclyAccessible: true
+
 
   AuroraInstance:
     Type: AWS::RDS::DBInstance
