@@ -7,7 +7,6 @@ Resources:
       CertificateRotationRestart: false
       CopyTagsToSnapshot: false
       DBInstanceClass: db.serverless	
-      DBInstanceIdentifier: monthly-expenses
       Engine: aurora-postgresql
       ManageMasterUserPassword: false
       MaxAllocatedStorage: 100
