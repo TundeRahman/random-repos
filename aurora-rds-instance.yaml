@@ -6,7 +6,7 @@ Resources:
       EngineVersion: "15.3"
       DatabaseName: mydb
       MasterUsername: admin
-      MasterUserPassword: MySecurePassword123!
+      MasterUserPassword: Tunde123!#Tunde123!#
       ServerlessV2ScalingConfiguration:
         MinCapacity: 0.5
         MaxCapacity: 4
