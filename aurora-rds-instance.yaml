@@ -5,7 +5,7 @@ Resources:
       Engine: aurora-postgresql
       EngineVersion: "15.3"
       DatabaseName: mydb
-      MasterUsername: admin
+      MasterUsername: tunderahman
       MasterUserPassword: Tunde123!#Tunde123!#
       ServerlessV2ScalingConfiguration:
         MinCapacity: 0.5
