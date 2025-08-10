@@ -1,0 +1,15 @@
+Resources:
+  DBInstance:  # ? Fixed level
+    Type: AWS::RDS::DBInstance
+    Properties:
+      AllowMajorVersionUpgrade: true
+      ApplyImmediately: true
+      CertificateRotationRestart: false
+      CopyTagsToSnapshot: false
+      DBInstanceClass: db.x2g
+      DBInstanceIdentifier: monthly-expenses
+      Engine: aurora-postgresql
+      ManageMasterUserPassword: false
+      MaxAllocatedStorage: 100
+      NetworkType: IPV4
+      PubliclyAccessible: true
