@@ -10,6 +10,7 @@ Resources:
       ServerlessV2ScalingConfiguration:
         MinCapacity: 0.5
         MaxCapacity: 4
+      EnableHttpEndpoint: true
 
 
   AuroraInstance:
